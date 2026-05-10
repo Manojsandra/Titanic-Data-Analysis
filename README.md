@@ -25,4 +25,16 @@ During the data cleaning process, I identified missing values in the Age, Cabin,
 
 Additionally, I noticed that the Age column was stored as a float data type. Since age values are generally represented as whole numbers, I converted the Age column from float to integer.
 
+## EDA 
+## 1.UNIVARIATE ANALYSIS
+Age Feature Analysis
+
+I performed univariate analysis on the Age feature using a histogram and density plot to understand the distribution of passenger ages.
+
+Observations
+The age distribution is slightly right-skewed.
+The highest concentration of passengers is between 25 and 30 years of age.
+This indicates that most passengers traveling on the Titanic were young adults.
+There are fewer passengers at higher age ranges (above 60 years).
+Some very young passengers (children) are also present in the dataset.
 
