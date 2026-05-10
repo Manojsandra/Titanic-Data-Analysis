@@ -17,8 +17,7 @@ https://www.kaggle.com/competitions/titanic/data
 ## Data Cleaning
 During the data cleaning process, I identified missing values in the Age, Cabin, and Embarked columns.
 
-1.The Age column contained several missing values. Since age is numerical data, I replaced the missing values using the mean of the column.<br>2.The Embarked column is categorical data and had a few missing values, so I filled them using the mode (most frequent value).
-
+1.The Age column contained several missing values. Since age is numerical data, I replaced the missing values using the mean of the column.<br>2.The Embarked column is categorical data and had a few missing values, so I filled them using the mode (most frequent value).<br>
 3.The Cabin column had more than 50% missing values, which could affect the analysis. Therefore, I decided to drop the column from the dataset.
 
 Additionally, I noticed that the Age column was stored as a float data type. Since age values are generally represented as whole numbers, I converted the Age column from float to integer.
@@ -48,10 +47,10 @@ These outliers were not removed because they represent valid passenger ages and 
 I performed univariate analysis on the Fare feature using a histogram and density plot to understand the distribution of passenger ages.
 
 #### Observations
-The Fare distribution is highly right-skewed.
-Most ticket prices are concentrated between 0 and 50.
-This indicates that the majority of passengers purchased lower-priced tickets.
-Since lower ticket fares are generally associated with Third Class (Pclass = 3) passengers, it suggests that most passengers belonged to the third class.
+The Fare distribution is highly right-skewed.<br>
+Most ticket prices are concentrated between 0 and 50.<br>
+This indicates that the majority of passengers purchased lower-priced tickets.<br>
+Since lower ticket fares are generally associated with Third Class (Pclass = 3) passengers, it suggests that most passengers belonged to the third class.<br>
 Only a small number of passengers purchased high-priced tickets, which represents passengers from higher classes.
 
 #### Conclusion
@@ -63,9 +62,9 @@ The fare distribution shows that the Titanic carried more lower-class passengers
 I performed univariate analysis on the Survived feature using a count plot to understand the survival distribution of passengers
 
 #### Observations
-The dataset shows that a larger number of passengers did not survive.
-Around 549 passengers died, while approximately 342 passengers survived.
-This indicates that the survival rate on the Titanic was relatively low.
-Conclusion
+The dataset shows that a larger number of passengers did not survive.<br>
+Around 549 passengers died, while approximately 342 passengers survived.<br>
+This indicates that the survival rate on the Titanic was relatively low.<br>
 
+#### Conclusion <br>
 The Survived feature is imbalanced because the number of non-survivors is greater than the number of survivors.
