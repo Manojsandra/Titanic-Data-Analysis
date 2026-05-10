@@ -66,5 +66,6 @@ The dataset shows that a larger number of passengers did not survive.<br>
 Around 549 passengers died, while approximately 342 passengers survived.<br>
 This indicates that the survival rate on the Titanic was relatively low.<br>
 
-#### Conclusion <br>
+#### Conclusion
 The Survived feature is imbalanced because the number of non-survivors is greater than the number of survivors.
+
