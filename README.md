@@ -31,10 +31,17 @@ Age Feature Analysis
 
 I performed univariate analysis on the Age feature using a histogram and density plot to understand the distribution of passenger ages.
 
-Observations
+Observations:
 The age distribution is slightly right-skewed.
 The highest concentration of passengers is between 25 and 30 years of age.
 This indicates that most passengers traveling on the Titanic were young adults.
 There are fewer passengers at higher age ranges (above 60 years).
 Some very young passengers (children) are also present in the dataset.
 
+## Age Boxplot Analysis
+
+To identify outliers in the Age feature, I used a box plot.
+
+The box plot shows that most passengers were between 20 and 35 years old, with a median age around 28 years. Some passengers with ages above 55 appear as outliers because they are far from the majority of the data distribution.
+
+These outliers were not removed because they represent valid passenger ages and are important for analysis.
