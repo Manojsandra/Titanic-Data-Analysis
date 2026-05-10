@@ -43,7 +43,7 @@ The box plot shows that most passengers were between 20 and 35 years old, with a
 
 These outliers were not removed because they represent valid passenger ages and are important for analysis.
 
-## 1.2 Farw Feature Analysis
+## 1.2 Fare Feature Analysis
 I performed univariate analysis on the Fare feature using a histogram and density plot to understand the distribution of passenger ages.
 
 #### Observations
