@@ -27,7 +27,7 @@ Additionally, I noticed that the Age column was stored as a float data type. Sin
 
 ## EDA 
 ## 1.UNIVARIATE ANALYSIS
-Age Feature Analysis
+# 1.1Age Feature Analysis
 
 I performed univariate analysis on the Age feature using a histogram and density plot to understand the distribution of passenger ages.
 
