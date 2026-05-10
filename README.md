@@ -46,7 +46,7 @@ The box plot shows that most passengers were between 20 and 35 years old, with a
 
 These outliers were not removed because they represent valid passenger ages and are important for analysis.
 
-## 1.2 Faew Feature Analysis
+## 1.2 Farw Feature Analysis
 I performed univariate analysis on the Fare feature using a histogram and density plot to understand the distribution of passenger ages.
 
 #### Observations
@@ -58,3 +58,16 @@ Only a small number of passengers purchased high-priced tickets, which represent
 
 #### Conclusion
 The fare distribution shows that the Titanic carried more lower-class passengers compared to upper-class passengers.
+
+## 2.UNIVARIATE ANALYSIS FOR CATEGORICAL DATA
+#### Survival Feature Analysis
+
+I performed univariate analysis on the Survived feature using a count plot to understand the survival distribution of passengers
+
+#### Observations
+The dataset shows that a larger number of passengers did not survive.
+Around 549 passengers died, while approximately 342 passengers survived.
+This indicates that the survival rate on the Titanic was relatively low.
+Conclusion
+
+The Survived feature is imbalanced because the number of non-survivors is greater than the number of survivors.
