@@ -27,11 +27,11 @@ Additionally, I noticed that the Age column was stored as a float data type. Sin
 
 ## EDA 
 ## 1.UNIVARIATE ANALYSIS
-# 1.1Age Feature Analysis
+### 1.1Age Feature Analysis
 
 I performed univariate analysis on the Age feature using a histogram and density plot to understand the distribution of passenger ages.
 
-Observations:
+#### Observations:
 The age distribution is slightly right-skewed.
 The highest concentration of passengers is between 25 and 30 years of age.
 This indicates that most passengers traveling on the Titanic were young adults.
@@ -45,3 +45,16 @@ To identify outliers in the Age feature, I used a box plot.
 The box plot shows that most passengers were between 20 and 35 years old, with a median age around 28 years. Some passengers with ages above 55 appear as outliers because they are far from the majority of the data distribution.
 
 These outliers were not removed because they represent valid passenger ages and are important for analysis.
+
+## 1.2 Faew Feature Analysis
+I performed univariate analysis on the Fare feature using a histogram and density plot to understand the distribution of passenger ages.
+
+#### Observations
+The Fare distribution is highly right-skewed.
+Most ticket prices are concentrated between 0 and 50.
+This indicates that the majority of passengers purchased lower-priced tickets.
+Since lower ticket fares are generally associated with Third Class (Pclass = 3) passengers, it suggests that most passengers belonged to the third class.
+Only a small number of passengers purchased high-priced tickets, which represents passengers from higher classes.
+
+#### Conclusion
+The fare distribution shows that the Titanic carried more lower-class passengers compared to upper-class passengers.
