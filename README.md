@@ -114,17 +114,109 @@ The analysis shows that the majority of Titanic passengers traveled alone, while
 I performed univariate analysis on the Parch feature to understand how many passengers were traveling with parents or children.
 
 #### Observations
-Most passengers were traveling without parents or children.
-Around 678 passengers had Parch = 0, indicating they were traveling alone in terms of parent-child relationships.
-Around 118 passengers had Parch = 1.
-Around 80 passengers had Parch = 2.
-Very few passengers traveled in larger family groups:
-Parch = 3 → 5 passengers
-Parch = 4 → 4 passengers
-Parch = 5 → 5 passengers
-Parch = 6 → 1 passenger
+Most passengers were traveling without parents or children.<br>
+Around 678 passengers had Parch = 0, indicating they were traveling alone in terms of parent-child relationships.<br>
+Around 118 passengers had Parch = 1.<br>
+Around 80 passengers had Parch = 2.<br>
+Very few passengers traveled in larger family groups:<br>
+Parch = 3 → 5 passengers<br>
+Parch = 4 → 4 passengers<br>
+Parch = 5 → 5 passengers<br>
+Parch = 6 → 1 passenger<br>
 
 #### Conclusion
 The analysis shows that most passengers were not traveling with parents or children, indicating that solo travel was more common on the Titanic.
 
-# BIVARIATE ANALYSIS
+## 3.BIVARIATE ANALYSIS
+## Pclass vs Survived Analysis
+I performed bivariate analysis between Pclass and Survived to understand how passenger class affected survival chances.
+
+#### Observations
+In Class 1, most passengers survived.<br>
+Survived: 136<br>
+Not Survived: 80<br>
+In Class 2, the number of survivors and non-survivors was relatively close.<br>
+Survived: 87<br>
+Not Survived: 97<br>
+In Class 3, most passengers did not survive.<br>
+Survived: 119<br>
+Not Survived: 372<br>
+
+#### Conclusion
+Passenger class had a strong impact on survival rates. First-class passengers had a higher chance of survival, while third-class passengers experienced the highest number of deaths.
+
+## Sex vs Survived Analysis
+I performed bivariate analysis between Sex and Survived to understand how gender affected survival rates on the Titanic.
+
+#### Observations
+Female passengers had a much higher survival rate compared to male passengers.<br>
+Female Survived: 233<br>
+Female Not Survived: 81<br>
+Most male passengers did not survive.<br>
+Male Survived: 109<br>
+Male Not Survived: 468<br>
+
+#### Conclusion
+Gender had a significant impact on survival. Female passengers were more likely to survive, while the majority of male passengers died during the disaster.
+ 
+## Age vs Survived Analysis
+I performed bivariate analysis between Age and Survived to understand how age affected survival.
+
+#### Observations
+The average age of passengers who did not survive was approximately 30.24 years.
+The average age of passengers who survived was approximately 28.43 years.
+This indicates that slightly younger passengers had a higher survival rate compared to older passengers.
+
+#### Conclusion
+There is only a small difference between the average ages of survivors and non-survivors. However, survivors were slightly younger on average.
+
+## KDE Analysis for Age vs Survived
+To better understand the relationship between Age and Survived, I used a KDE (Kernel Density Estimation) plot to compare the age distribution of survivors and non-survivors.
+
+#### Observations
+The KDE plot shows that many children had a higher chance of survival.<br>
+In the age group between 20 and 40 years, a larger number of passengers did not survive.<br>
+The density curve for non-survivors is higher in this range compared to survivors.<br>
+Survival rates decrease for some adult age groups, especially among male passengers.<br>
+
+#### Conclusion
+The analysis indicates that children were more likely to survive, while many passengers between 20 and 40 years old did not survive during the disaster.
+
+## SibSp vs Survived Analysis
+I performed bivariate analysis between SibSp and Survived to understand how traveling with siblings or spouses affected survival chances.
+
+#### Observations
+Passengers traveling alone (SibSp = 0) had a lower survival rate compared to passengers traveling with small families.<br>
+Passengers with SibSp = 1 had a better chance of survival.<br>
+Passengers with small family sizes such as 1 or 2 siblings/spouses showed relatively higher survival rates.<br>
+As the SibSp value increased, the survival rate generally decreased.<br>
+Very large family groups had lower chances of survival.<br>
+
+#### Conclusion
+The analysis suggests that passengers traveling with small families had better survival chances compared to passengers traveling alone or with very large families.
+
+## Embarked vs Survived Analysis
+I performed bivariate analysis between Embarked and Survived to understand how the port of embarkation affected survival rates.
+
+#### Observations
+Southampton (S)<br>
+Total passengers: 646<br>
+Not Survived: 427<br>
+Survived: 219<br>
+Most passengers boarded from Southampton, and a large number of them did not survive.
+
+Cherbourg (C)<br>
+Total passengers: 168<br>
+Not Survived: 75<br>
+Survived: 93<br>
+Passengers from Cherbourg had a relatively higher survival rate compared to Southampton passengers.
+
+Queenstown (Q)<br>
+Total passengers: 77<br>
+Not Survived: 47<br>
+Survived: 30<br>
+Passengers from Queenstown also showed a better survival ratio compared to Southampton passengers.
+
+#### Conclusion
+
+Passengers who embarked from C and Q had better survival rates compared to passengers from S. Southampton had the highest number of passengers and also the highest number of deaths.
