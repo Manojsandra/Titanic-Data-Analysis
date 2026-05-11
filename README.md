@@ -24,7 +24,7 @@ Additionally, I noticed that the Age column was stored as a float data type. Sin
 
 ## EDA 
 ## 1.UNIVARIATE ANALYSIS
-### 1.1Age Feature Analysis
+### Age Feature Analysis
 
 I performed univariate analysis on the Age feature using a histogram and density plot to understand the distribution of passenger ages.
 
@@ -43,7 +43,7 @@ The box plot shows that most passengers were between 20 and 35 years old, with a
 
 These outliers were not removed because they represent valid passenger ages and are important for analysis.
 
-## 1.2 Fare Feature Analysis
+## Fare Feature Analysis
 I performed univariate analysis on the Fare feature using a histogram and density plot to understand the distribution of passenger ages.
 
 #### Observations
@@ -69,3 +69,62 @@ This indicates that the survival rate on the Titanic was relatively low.<br>
 #### Conclusion
 The Survived feature is imbalanced because the number of non-survivors is greater than the number of survivors.
 
+## Passenger Class (Pclass) Analysis
+I performed univariate analysis on the Pclass feature to understand the distribution of passengers across different ticket classes.
+
+#### Observations
+Most passengers belonged to Class 3.<br>
+Around 491 passengers traveled in Class 3.<br>
+Around 216 passengers belonged to Class 1.<br>
+Around 184 passengers belonged to Class 2.<br>
+This confirms the earlier observation from the Fare analysis that the Titanic carried more lower-class passengers.
+
+#### Conclusion
+The dataset shows that the majority of passengers were from the third class, while fewer passengers traveled in first and second classes.
+
+## Sex Feature Analysis
+I performed univariate analysis on the Sex feature to understand the gender distribution of passengers on the Titanic.
+
+#### Observations
+The number of male passengers was significantly higher than female passengers.<br>
+Around 577 passengers were male.<br>
+Around 314 passengers were female.<br>
+This indicates that most passengers traveling on the Titanic were men.<br>
+
+#### Conclusion
+The dataset contains a higher proportion of male passengers compared to female passengers.
+
+## SibSp Feature Analysis
+I performed univariate analysis on the SibSp feature to understand how many passengers were traveling alone or with siblings/spouses.
+
+#### Observations
+Most passengers were traveling alone.<br>
+Around 608 passengers had SibSp = 0, meaning they were not traveling with siblings or spouses.<br>
+Around 209 passengers had SibSp = 1.<br>
+Smaller numbers of passengers traveled with larger family groups:<br>
+SibSp = 2 → 28 passengers<br>
+SibSp = 3 → 16 passengers<br>
+SibSp = 5 → 5 passengers<br>
+SibSp = 8 → 7 passengers<br>
+
+#### Conclusion
+The analysis shows that the majority of Titanic passengers traveled alone, while fewer passengers traveled with family members.
+
+## Parch Feature Analysis
+I performed univariate analysis on the Parch feature to understand how many passengers were traveling with parents or children.
+
+#### Observations
+Most passengers were traveling without parents or children.
+Around 678 passengers had Parch = 0, indicating they were traveling alone in terms of parent-child relationships.
+Around 118 passengers had Parch = 1.
+Around 80 passengers had Parch = 2.
+Very few passengers traveled in larger family groups:
+Parch = 3 → 5 passengers
+Parch = 4 → 4 passengers
+Parch = 5 → 5 passengers
+Parch = 6 → 1 passenger
+
+#### Conclusion
+The analysis shows that most passengers were not traveling with parents or children, indicating that solo travel was more common on the Titanic.
+
+# BIVARIATE ANALYSIS
