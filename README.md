@@ -251,8 +251,8 @@ This indicates that male passengers were less likely to survive.<br>
 Female passengers had a much higher chance of survival compared to males.<br>
 
 
-## Final Sections
-Key Insights<br>
+## Finally
+#### Key Insights<br>
 Most passengers belonged to third class.<br>
 Female passengers had a much higher survival rate than male passengers.<br>
 First-class passengers had better chances of survival.<br>
