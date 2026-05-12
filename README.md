@@ -220,3 +220,43 @@ Passengers from Queenstown also showed a better survival ratio compared to South
 #### Conclusion
 
 Passengers who embarked from C and Q had better survival rates compared to passengers from S. Southampton had the highest number of passengers and also the highest number of deaths.
+
+## Feature Encoding
+Before performing feature selection and multivariate analysis, I converted the categorical features into numerical format using One Hot Encoding.<br>
+Machine learning algorithms and correlation analysis require numerical input, so categorical columns such as Sex and Embarked were encoded into numerical values.
+
+#### Why One Hot Encoding?
+Machine learning models cannot directly process categorical data.<br>
+Correlation matrices only work with numerical features.<br>
+One Hot Encoding helps represent categorical values without introducing ordinal relationships.
+Features Encoded<br>
+The following categorical columns were encoded:<br>
+Sex
+Embarked
+
+## Correlation Matrix Analysis
+After converting categorical features into numerical format, I used a correlation matrix to understand the relationships between features and identify which variables are most related to survival.
+
+#### Observations
+Fare shows a moderate positive correlation with Survived (0.26).<br>
+This indicates that passengers who paid higher fares had better chances of survival.<br>
+Pclass shows a moderate negative correlation with Survived (-0.34).<br>
+Lower class numbers represent higher passenger classes, so first-class passengers had higher survival rates.<br>
+SibSp and Parch have a positive correlation (0.41) with each other.<br>
+This indicates that passengers traveling with siblings/spouses were also likely traveling with parents/children.<br>
+Age has a weak negative correlation with survival (-0.068), showing that age had only a small effect on survival.
+sex has strong negative correlation with survival(-0.54), showing that<br>
+As the value for Sex_male increases (male passengers), the survival rate decreases.<br>
+This indicates that male passengers were less likely to survive.<br>
+Female passengers had a much higher chance of survival compared to males.<br>
+
+
+## Final Sections
+Key Insights<br>
+Most passengers belonged to third class.<br>
+Female passengers had a much higher survival rate than male passengers.<br>
+First-class passengers had better chances of survival.<br>
+Higher ticket fares were associated with higher survival rates.<br>
+Most passengers traveling alone had lower survival chances.<br>
+Small families had better survival rates compared to very large families.<br>
+Sex, Pclass, and Fare were the most important features related to survival.<br>
